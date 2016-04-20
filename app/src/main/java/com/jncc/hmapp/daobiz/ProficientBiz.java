@@ -8,6 +8,6 @@ import com.jncc.hmapp.daoimpl.ProficientImpl;
  */
 public class ProficientBiz {
 
-    private IProficient iProficient = new ProficientImpl();
+    private final IProficient iProficient = new ProficientImpl();
 
 }
