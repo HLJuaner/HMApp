@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:gravity="center"
+    android:background="@color/mainBackgroundColor"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/rg_navTab">
+        <RadioButton
+            android:id="@+id/rb_tabIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/select_tab_index"
+            android:drawablePadding="5dp"
+            android:textColor="@color/tabNormalColor"
+            android:text="首页"/>
+
+        <RadioButton
+            android:id="@+id/rb_tabWorkManager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/select_tab_workmanager"
+            android:drawablePadding="5dp"
+            android:textColor="@color/tabNormalColor"
+            android:text="工作管理"/>
+        <RadioButton
+            android:id="@+id/rb_tabCheckCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/select_tab_checkcrop"
+            android:drawablePadding="5dp"
+            android:textColor="@color/tabNormalColor"
+            android:text="作物检测"/>
+        <RadioButton
+            android:id="@+id/rb_tabMy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/select_tab_my"
+            android:drawablePadding="5dp"
+            android:textColor="@color/tabNormalColor"
+            android:text="个人中心"/>
+    </RadioGroup>
+
+</LinearLayout>

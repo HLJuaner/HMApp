@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_welcomePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/lLayout_dot"
+    android:id="@+id/rLayout_btnContent"
+    android:visibility="gone"
+        >
+        <Button
+            android:id="@+id/btn_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="立即体验 >>"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            >
+        </Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_experience"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="登  录"
+                android:textSize="21sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/btn_login"
+                android:background="@drawable/style_btn_welcome"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_register"
+                android:text="注  册"
+                android:textSize="21sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/style_btn_welcome"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lLayout_dot"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_alignParentBottom="true"
+        >
+    </LinearLayout>
+</RelativeLayout>

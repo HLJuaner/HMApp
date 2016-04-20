@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBackgroundColor"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:id="@+id/iv_headPortrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/pic_facilitator"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="经销商"-->
+                <!--/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/iv_headPortrait"-->
+            <!--android:background="@color/red"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:paddingStart="10dp"-->
+            <!--android:paddingEnd="10dp"-->
+            <!--android:paddingTop="1dp"-->
+            <!--android:paddingBottom="1dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:text="经销商"/>-->
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="经销商管理"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/kuaiColorText"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <!-- 我的代办 myHandle -->
+            <LinearLayout
+                android:id="@+id/ll_myHandle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/select_click_change"
+                >
+                <TextView
+                    style="@style/TabMyInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_border_bottom"
+                    android:drawableLeft="@mipmap/ic_myhandle"
+                    android:text="我的代办"/>
+            </LinearLayout>
+
+            <!-- 我的任务 myTask -->
+            <FrameLayout
+                android:id="@+id/fl_myTask"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/select_click_change"
+                >
+                <TextView
+                    style="@style/TabMyInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_border_bottom"
+                    android:drawableLeft="@mipmap/ic_mytask"
+                    android:text="我的任务"/>
+
+                <TextView
+                    android:id="@+id/tv_myTaskCount"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/style_msg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="0"/>
+            </FrameLayout>
+
+            <!-- 我的关注 myAttention-->
+            <LinearLayout
+                android:id="@+id/ll_myAttention"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/select_click_change"
+                >
+                <TextView
+                    style="@style/TabMyInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_border_bottom"
+                    android:drawableLeft="@mipmap/ic_myattention"
+                    android:text="我的关注"/>
+            </LinearLayout>
+
+            <!-- 身份管理 identityManager-->
+            <LinearLayout
+                android:id="@+id/ll_identityManager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/select_click_change"
+                >
+                <TextView
+                    style="@style/TabMyInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_border_bottom"
+                    android:drawableLeft="@mipmap/ic_identitymanager"
+                    android:text="身份管理"/>
+            </LinearLayout>
+
+            <!-- 推广账号 promotionAccount -->
+            <LinearLayout
+                android:id="@+id/ll_promotionAccount"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/select_click_change"
+                >
+                <TextView
+                    style="@style/TabMyInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_border_bottom"
+                    android:drawableLeft="@mipmap/ic_promotionaccount"
+                    android:text="推广账号"/>
+            </LinearLayout>
+
+            <!-- 子账户维护 subAccountManager -->
+            <LinearLayout
+                android:id="@+id/ll_subAccountManager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/select_click_change"
+                >
+                <TextView
+                    style="@style/TabMyInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_subacmanager"
+                    android:text="子账号维护"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="账户管理"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/kuaiColorText"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <!-- 账户维护 accountManager -->
+            <LinearLayout
+                android:id="@+id/ll_accountManager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/select_click_change"
+                >
+                <TextView
+                    style="@style/TabMyInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_border_bottom"
+                    android:drawableLeft="@mipmap/ic_acmanager"
+                    android:text="账户维护"/>
+            </LinearLayout>
+
+            <!-- 账户积分 accountIntegration -->
+            <LinearLayout
+                android:id="@+id/ll_accountIntegration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/select_click_change"
+                >
+                <TextView
+                    style="@style/TabMyInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_border_bottom"
+                    android:drawableLeft="@mipmap/ic_acintegration"
+                    android:text="账户积分"/>
+            </LinearLayout>
+
+            <!-- 设置 set -->
+            <LinearLayout
+                android:id="@+id/ll_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/select_click_change"
+                >
+                <TextView
+                    style="@style/TabMyInfoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_set"
+                    android:text="设置"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

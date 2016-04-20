@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="titleBackgroundColor">#2DBE60</color>
+    <color name="mainBackgroundColor">#F6F6F6</color>
+    <color name="tabNormalColor">#CCCCCC</color>
+    <color name="indexNavText">#181818</color>
+    <color name="kuaiColorText">#808080</color>
+    <color name="bottomBorder">#E6E6E6</color>
+    <color name="tabMyNavColor">#404040</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="red">#FF0000</color>
+</resources>
