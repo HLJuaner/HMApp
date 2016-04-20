@@ -21,6 +21,7 @@ import com.jncc.hmapp.BaseFragment;
 import com.jncc.hmapp.HMApplication;
 import com.jncc.hmapp.R;
 import com.jncc.hmapp.activity.ProficientActivity;
+import com.jncc.hmapp.daobiz.ProficientBiz;
 import com.jncc.hmapp.utils.LogUtil;
 import com.jncc.hmapp.utils.ToastUtil;
 import com.jncc.hmapp.utils.VolleyRequestUtil;
@@ -124,7 +125,7 @@ public class TabCheckCropFragment extends BaseFragment  implements RadioGroup.On
     private  void onClick(View view){
         switch (view.getId()){
             case R.id.tv_proficient:
-
+                LogUtil.i(ProficientBiz.Test(getContext()));
                 break;
 
         }

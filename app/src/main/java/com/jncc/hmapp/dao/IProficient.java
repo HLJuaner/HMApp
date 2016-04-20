@@ -1,5 +1,7 @@
 package com.jncc.hmapp.dao;
 
+import android.content.Context;
+
 import com.jncc.hmapp.entity.Proficient;
 
 import java.util.List;
@@ -14,5 +16,5 @@ public interface IProficient {
      *
      * @param requestUrl  提交地址
      */
-    List<Proficient> getProficientList(String requestUrl);
+    String getProficientList(Context context, String requestUrl);
 }
